@@ -6,7 +6,8 @@ const mongoose = require("mongoose");
 
 const userRouter = require("./routes/user");
 
-
+const PORT = process.env.PORT || 3000;
+const MONGO_URL = process.env.MONGO_URL || "mongodb://localhost:27017";
 
 // DB connection
 main().catch((err) => console.log(err));
